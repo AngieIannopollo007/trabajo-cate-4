@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 >¿CUANTOS PESOS NECESITO?</h1>
+    <form action="" method="post">
+            <label class="p1" for="donde">¿Donde desea viajar?</label>
+            <select class="p1" name="opcion" id="opcion">
+                <option class="p1" value="Tokyo">Tokyo</option>
+                <option class="p1" value="Barcelona">Barcelona</option>
+                <option class="p1" value="Miami">Miami</option>
+                <option class="p1" value="Rio">Rio</option>
+                <option class="p1" value="Cusco">Cusco</option>
+                <option class="p1" value="Colombia">Colombia</option>
+                <option class="p1" value="Suiza">Suiza</option>
+                <option class="p1" value="Guatemala">Guatemala</option>
+        </select>
+            <label class="p1" for="cuantos dias">¿Cuantos dias desea viajar?</label>
+            <input class="p1" type="number" name="dias" id="dias">
+            <button type="submit" onclick="suma(event)"> Enviar</button>
+        
+    </form>
+    <br>
+    <div></div>
+    <h2>Necesitas 100 por día</h2>
+    <p class="p1" id="costoFinal"></p>
+    <script src="main.js"></script>
+</body>
+</html>
